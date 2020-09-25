@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/xuebb/AutoTest/chapter9">
+        <!--<classes>
+            <class name="com.course.httpClient.demo.MyHttpClient"/>
+        </classes>-->
+        <classes>
+            <class name = "com.course.httpClient.cookies.MyCookiesForGet"/>
+        </classes>
+    </test>
+</suite>

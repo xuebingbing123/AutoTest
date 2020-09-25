@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="All Test Suite">
+   <!-- <test verbose="2" preserve-order="true" name="test1">
+        <classes>
+            <class name="com.course.testng.BasicAnnotation"/>
+            <class name="com.course.testng.IgnoreTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test2">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"></class>
+            <class name="com.course.testng.suite.SmsCode"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test3">
+        <classes>
+            <class name="com.course.testng.suite.SuiteConfig"></class>
+            <class name="com.course.testng.suite.open"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test4">
+        <groups>
+            <run>
+                <include name="server" />
+                <include name="client" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnMethod"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test5">
+        <groups>
+            <run>
+                <include name="stu" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.groups.GroupsOnClass1"></class>
+            <class name="com.course.testng.groups.GroupsOnClass2"></class>
+            <class name="com.course.testng.groups.GroupsOnClass3"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test6">
+        <classes>
+            <class name="com.course.testng.exception"></class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test7">
+        <classes>
+            <class name="com.course.testng.Depend">
+                <method name = "test2"/>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test8">
+        <classes>
+            <parameter name="name" value="xue"/>
+            <parameter name="age" value="14"/>
+            <class name="com.course.testng.paramter.ParamterTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test9">
+        <classes>
+            <class name="com.course.testng.paramter.DataProviderTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test10" parallel="tests" thread-count="3" >
+        /**
+        tests级别：不同的test tag下的用例可以在不同的线程下执行
+                相同的test tag下的用例只能在同一个线程中去执行
+        classs级别：相同的class tag 下的用例在同一个线程中执行
+                    不同的class tag 下的用例可以在不同的线程中执行
+        methods级别：所有用例都可以在不同的线程下去执行
+
+        thread-count：代表了最大并发线程数
+
+        xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
+        **/
+        <classes>
+            <class name="com.course.testng.MultiThreadOnAnnotion.MultiThreadOnXml"/>
+        </classes>
+    </test>
+    <test preserve-order="true" name="test11">
+        <classes>
+            <class name="com.course.testng.MultiThreadOnAnnotion.MultiThreadOnAnnotion"/>
+        </classes>
+    </test>
+    <test preserve-order="true" name="test12">
+        <classes>
+            <class name="com.course.testng.TinmeOutTest"/>
+        </classes>
+    </test>-->
+</suite>

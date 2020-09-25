@@ -1,0 +1,28 @@
+[
+  {
+    "description":"这是第一个moko示例",
+    "request":{
+      "uri":"/deoo"
+    },
+    "response":{
+      "text":"第一个moco框架demo"
+    }
+
+  },
+  {
+    "description":"获取cookies信息",
+    "request":{
+      "uri":"/getcookies"
+    },
+    "response":{
+      "cookies": {
+        "login": "false",
+        "ssss": "2ewre"
+      },
+      "text":"获取cookies信息成功"
+    }
+
+  }
+
+
+]

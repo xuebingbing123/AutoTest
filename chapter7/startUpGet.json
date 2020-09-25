@@ -1,0 +1,106 @@
+[
+  {
+    "description":"模拟一个没有参数的get请求",
+    "request":{
+      "uri":"/getDemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"这是一个没有参数的get请求"
+    }
+  },
+  {
+    "description":"模拟一个有参数的get请求",
+    "request":{
+      "uri":"/getwithparm",
+      "method":"get",
+      "queries": {
+          "name": "xue",
+          "age": "12"
+      }
+    },
+    "response":{
+      "text":"xue!!!!!!!!!!"
+    }
+  },
+  {
+    "description": "这是一个带cookies信息的get请求",
+    "request": {
+      "uri": "/get/cookies/demo",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是一个需要带cookies信息请求的get请求"
+    }
+  },
+  {
+    "description": "这是一个带cookies信息的post请求",
+    "request": {
+      "uri": "/post/cookies/demo",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "xue",
+        "age": "12"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "232312": "23121321",
+        "status": "1"
+      }
+    }
+  },
+  {
+    "description": "这是一个带cookies信息的post请求",
+    "request": {
+      "uri": "/post/cookies/demo2",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "xue2",
+        "age": "122"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "232312": "231213212",
+        "status": "12"
+      }
+    }
+  },
+  {
+    "description": "这是一个带redirect信息的post请求",
+    "request": {
+      "uri": "/redirect",
+      "method": "get"
+    },
+    "redirectTo": "https://www.baidu.com"
+  },
+  {
+    "description": "重定向到自己的网页上",
+    "request": {
+      "uri": "/redirect/toPath"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "被重定向的网页",
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "text": "重定向成功啦"
+     }
+
+  }
+]
